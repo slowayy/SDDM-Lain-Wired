@@ -24,9 +24,6 @@ Will accept all!
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
-![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
-![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
-![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
 
 <div align="center">
   
