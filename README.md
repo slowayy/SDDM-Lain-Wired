@@ -10,6 +10,8 @@ all credits goes for them for base and photos.
 Feel free to make pr, for enhancement, improvement, etc.
 Will accept all!
 
+Leave star if u like or wanna
+
 
 # Preview
 
