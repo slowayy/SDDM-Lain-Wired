@@ -23,19 +23,19 @@ Rectangle {
 	}
 
 	AnimatedImage {
-		width: parent.width
-		height: parent.height
+		width: Window.width
+		height: Window.height
 		fillMode: Image.Tile
 		source: "bg_dark.gif"
 	}
 	
 	AnimatedImage {
-		width: parent.width
-		height: parent.height
+		width: Window.width
+		height: Window.height
 		fillMode: Image.Tile
 		source: "bg_darker.gif"
 	}
-
+	
 	ColumnLayout {
 		width: parent.width
 		height: parent.height
@@ -46,18 +46,22 @@ Rectangle {
 			height: 192
 			source: "WiredLogin.gif"
 		}
+		
 		AnimatedImage{
 			Layout.alignment: Qt.AlignCenter
-			Layout.bottomMargin: 20
+			Layout.bottomMargin: 10
 			height: 50
 			source: "strange-text.gif"
 		}
+		
 		Qqc.Label {
 			Layout.alignment: Qt.AlignCenter
-			text: "Ｕｓｅｒ ＩD:"
+			text: "User ID:"
 			color: "#c1b492"
-			font.pixelSize: 16
+			font.pixelSize: 30
+			
 		}
+		
 		Qqc.TextField {
 			id: username
 			Layout.alignment: Qt.AlignCenter
@@ -68,6 +72,7 @@ Rectangle {
 					color: "#000"
 					implicitWidth: 200
 					border.color: "#d2738a"
+					radius: 10
 				}
 			}
 			KeyNavigation.backtab: shutdownBtn; KeyNavigation.tab: password
@@ -80,9 +85,9 @@ Rectangle {
 		}
 		Qqc.Label {
 			Layout.alignment: Qt.AlignCenter
-			text: "Ｐａｓｓｗｏｒｄ："
+			text: "Password:"
 			color: "#c1b492"
-			font.pixelSize: 16
+			font.pixelSize: 30
 		}
 		Qqc.TextField {
 			id: password
@@ -94,6 +99,7 @@ Rectangle {
 					color: "#000"
 					implicitWidth: 200
 					border.color: "#d2738a"
+					radius: 10
 				}
 			}
 			KeyNavigation.backtab: username; KeyNavigation.tab: session
@@ -108,15 +114,18 @@ Rectangle {
 			Layout.alignment: Qt.AlignCenter
 			Layout.topMargin: 4
 			Layout.bottomMargin: 50
-			width: 200
+			width: 200	
+			
 			Rectangle {
 				anchors.fill: parent
 				color: "#d2738a"
+				radius: 11
 			}
+			
 			Qqc.Label {
 				Layout.alignment: Qt.AlignCenter
-				text: "Ｌｏｇｉｎ"
-				color: "#c1b492"
+				text: "Wired"
+				color: "#000000"
 				font.pixelSize: 20
 			}
 			MouseArea {
@@ -125,6 +134,8 @@ Rectangle {
 			}
 		}
 	}
+	
+	
 	AnimatedImage {
 		id: shutdownBtn
 		height: 80
@@ -211,5 +222,12 @@ Rectangle {
 			password.focus = true
 		}
 	}
+	 
+	 
+
+
+
+
+
 }
 
