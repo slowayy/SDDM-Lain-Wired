@@ -6,11 +6,10 @@ import QtQuick.Window 2.2
 import QtMultimedia 5.5
 import SddmComponents 2.0
 
-Rectangle {
-	color: "black"
-	width: Window.width
-	height: Window.height
 
+Rectangle{
+
+    color:"black"
 	Connections {
 		target: sddm
 
@@ -35,38 +34,36 @@ Rectangle {
 		fillMode: Image.Tile
 		source: "bg_darker.gif"
 	}
-	
-	ColumnLayout {
-		width: parent.width
-		height: parent.height
-		AnimatedImage{
-			Layout.alignment: Qt.AlignCenter
-			Layout.topMargin: 2
-			width: 192
-			height: 192
-			source: "WiredLogin.gif"
-		}
-		
-		AnimatedImage{
-			Layout.alignment: Qt.AlignCenter
-			Layout.bottomMargin: 10
+
+    AnimatedImage{
+        id: wiredLogin
+        width: 400
+        height: 400
+        source: "WiredLogin.gif"
+        x: 770
+        y: 10
+    }
+    
+    //IDK WHAT THIS TXT SAYS, BUT IS COOL
+    AnimatedImage{
 			height: 50
 			source: "strange-text.gif"
+            x: 620
+            y: 400
 		}
-		
-		Qqc.Label {
-			Layout.alignment: Qt.AlignCenter
-			text: "User ID:"
-			color: "#c1b492"
-			font.pixelSize: 30
-			
-		}
-		
-		Qqc.TextField {
-			id: username
-			Layout.alignment: Qt.AlignCenter
-			text: userModel.lastUser
-			style: TextFieldStyle {
+         
+   AnimatedImage{
+            width: 300
+            height: 300
+			source: "lain.gif"
+            x: 808
+            y: 470
+		}	
+    
+    Qqc.TextField {
+	              id: username
+	              text: userModel.lastUser
+	             style: TextFieldStyle {
 				textColor: "#c1b492"
 				background: Rectangle {
 					color: "#000"
@@ -82,14 +79,10 @@ Rectangle {
 					event.accepted = true
 				}
 			}
-		}
-		Qqc.Label {
-			Layout.alignment: Qt.AlignCenter
-			text: "Password:"
-			color: "#c1b492"
-			font.pixelSize: 30
-		}
-		Qqc.TextField {
+        x: 854
+        y: 770
+        }
+    Qqc.TextField {
 			id: password
 			echoMode: TextInput.Password
 			Layout.alignment: Qt.AlignCenter
@@ -109,8 +102,10 @@ Rectangle {
 					event.accepted = true
 				}
 			}
+            x: 854
+            y: 830
 		}
-		ColumnLayout {
+      ColumnLayout {
 			Layout.alignment: Qt.AlignCenter
 			Layout.topMargin: 4
 			Layout.bottomMargin: 50
@@ -132,102 +127,41 @@ Rectangle {
 				anchors.fill: parent
 				onClicked: sddm.login(username.text, password.text, session.index)
 			}
-		}
-	}
-	
-	
-	AnimatedImage {
-		id: shutdownBtn
-		height: 80
-		width: 80
-		y: 10
-		x: Window.width - width - 10
-		source: "VisLain.gif"
-		fillMode: Image.PreserveAspectFit
-		MouseArea {
-			anchors.fill: parent
-			hoverEnabled: true
-			onClicked: sddm.powerOff()
-			onEntered: {
-				var component = Qt.createComponent("ShutdownToolTip.qml");
-				if (component.status == Component.Ready) {
-					var tooltip = component.createObject(shutdownBtn);
-					tooltip.x = -45
-					tooltip.y = 60
-				tooltip.destroy(600);
-				}
-			}
-		}
-	}
-	AnimatedImage {
-		id: rebootBtn
-		anchors.right: shutdownBtn.left
-		anchors.rightMargin: 5
-		y: shutdownBtn.y + 10
-		height: 70
-		width: 60
-		source: "lain_myese.gif"
-		fillMode: Image.PreserveAspectFit
-		MouseArea {
-			anchors.fill: parent
-			hoverEnabled: true
-			onClicked: sddm.reboot()
-			onEntered: {
-				var component = Qt.createComponent("RebootToolTip.qml");
-				if (component.status == Component.Ready) {
-					var tooltip = component.createObject(rebootBtn);
-					tooltip.x = -45
-					tooltip.y = 50
-				tooltip.destroy(600);
-				}
-			}
-		}
-	}
-	ComboBox {
-		id: session
-		height: 30
-		width: 200
-		x: 15
-		y: 20
-		model: sessionModel
-		index: sessionModel.lastIndex
-		color: "#000"
-		borderColor: "#d2738a"
-		focusColor: "#d2738a"
-		hoverColor: "#d2738a"
-		textColor: "#c1b492"
-		arrowIcon: "angle-down.png"
-		KeyNavigation.backtab: password; KeyNavigation.tab: rebootBtn;
-	}
-	Audio {
-		id: bgMusic
-		source: "bg_music.wav"
-		autoPlay: true
-		loops: Audio.Infinite
-	}
-	Audio {
-		id: welcome
-		source: "welcome.wav"
-		autoPlay: true
-	}
-	Audio {
-		id: denied
-		source: "denied.wav"
-	}
-
-	Component.onCompleted: {
-		if (username.text == "") {
-			username.focus = true
-		} else {
-			password.focus = true
-		}
-	}
-	 
-	 
+            x: 854
+            y: 870
+        }   
 
 
 
+
+/*
+    the first idea was animate this image until fills the bottom screen, with animation, but idk how make this, will update later.
+Item {
+    id: container
+    width: 1920; height: 500
+
+    Rectangle {
+        id: myRect
+        AnimatedImage{
+                    width: 341; height: 128
+        source: "wiredgang.gif"
+        }
+    
+    }
+
+    states: State {
+        name: "reanchored"
+        AnchorChanges { target: mRect; anchors.right: container.right }
+    }
+
+    transitions: Transition {
+        // smoothly reanchor myRect and move into new position
+        AnchorAnimation { duration: 1000 }
+    }
+
+    Component.onCompleted: container.state = "reanchored"
+    y: 952
+}*/
 
 
 }
-
