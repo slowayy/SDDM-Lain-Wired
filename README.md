@@ -7,9 +7,10 @@ This is a fork of https://github.com/lll2yu/sddm-lain-wired-theme
 and inspired in https://fauux.neocities.org/login
 all credits goes for them for base and photos.
 # TODO
+* [ ] Add the login function
 * [ ] Use the <a href="https://github.com/oxzh/SDDM-Lain-Wired/blob/main/wiredgang.gif">wiredgang.gif </a>, and add to bottom of screen
 * [ ] Play <a wiredgang.gif href="https://github.com/oxzh/SDDM-Lain-Wired/blob/main/welcome.wav"> welcome.wav </a>, after boot 
-* [ ] Play <a wiredgang.gif href="https://github.com/oxzh/SDDM-Lain-Wired/blob/main/denied.wav"> </a> if passwd is incorrect
+* [ ] Play <a wiredgang.gif href="https://github.com/oxzh/SDDM-Lain-Wired/blob/main/denied.wav"> denied.wav</a> if passwd is incorrect
 
 # Pull Request
 Feel free to make pr, for enhancement, improvement, etc.
