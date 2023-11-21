@@ -15,9 +15,9 @@ Will accept all!
 Leave star if u like or wanna
 
 
-# Preview(old)
+# Preview
 
-![231103_16h58m37s_screenshot](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/c0affc12-05bc-4326-8085-4d6044f8ae12)
+![231103_16h58m37s_screenshot](https://raw.githubusercontent.com/oxzh/SDDM-Lain-Wired/main/Preview(New).png)
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
