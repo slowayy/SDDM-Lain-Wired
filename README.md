@@ -1,7 +1,8 @@
 # SDDM-Lain-Wired
 An SDDM theme, themed with Wired, from "Lain serial experiements"
 # ⚠️Warn⚠️
-# BROKEN FOR NOW, DONT HAVE THE LOGIN FUNCTION, I WILL ADD LATER!
+  Broken, the code is a bunch of shit, if you want, make it work and use it, dont gon solve that, for now.
+### ~~BROKEN FOR NOW, DONT HAVE THE LOGIN FUNCTION, I WILL ADD LATER!~~
 
 This is a fork of https://github.com/lll2yu/sddm-lain-wired-theme
 and inspired in https://fauux.neocities.org/login
@@ -21,7 +22,7 @@ Leave star if u like or wanna
 
 # Preview
 
-![231103_16h58m37s_screenshot](https://raw.githubusercontent.com/oxzh/SDDM-Lain-Wired/main/Preview(New).png)
+![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
 ![LainLove](https://github.com/oxzh/SDDM-Lain-Wired/assets/85556196/7331bc9b-4144-4690-8bc9-af2bdeef3c76)
